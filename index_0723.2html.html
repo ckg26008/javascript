@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>見出し</h1>
     <p>ここを書き換えます</p>
 
-    <button onclic="action()">
+    <!-- <button onclic="action()"> -->
+    <!-- [植田]onclickのスペルミスです。多分、前に映像で出したのが見にくかったのだと思います。 -->
+    <button onclick="action()">
         文字を書き換える
     </button>
     <script>
-        function action(){
-            document.querySelector("p")="ここを書き換えました。"
-            textContent="ここを書き換えました。"
+        function action() {
+            // document.querySelector("p")="ここを書き換えました。"
+            // textContent="ここを書き換えました。"
+
+            // [植田修正] 2行を1行にくっつけます。そしてメッセージを1個にしました。
+            document.querySelector("p").textContent = "ここを書き換えました。"
         }
     </script>
 </body>
+
 </html>
